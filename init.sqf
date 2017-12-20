@@ -8,7 +8,9 @@ if (isDedicated) then {debug_source = "Server";} else {debug_source = name playe
 [] call compileFinal preprocessFileLineNumbers "kp_liberation_config.sqf";
 [] call compileFinal preprocessFileLineNumbers "presets\init_presets.sqf";
 
+
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
+[] execVM "scripts\init_droneWork.sqf";
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
 
