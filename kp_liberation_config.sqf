@@ -13,7 +13,7 @@ KP_liberation_medical_vehicles = [
 	"rhsusf_M1230a1_usarmy_d",
 	"rhsusf_M1230a1_usarmy_wd"
 ];
-
+setmass
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
 KP_liberation_ace_crates = [
 	"ACE_Box_82mm_Mo_HE",
@@ -369,7 +369,8 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
 	"rhsusf_M978A4_BKIT_usarmy_wd",
-	"BW_LKW15T_Fuel_F"
+	"BW_LKW15T_Fuel_F",
+	"LOP_IA_HEMTT_Fuel_D"
 ];
 
 // Classnames of artillery vehicles or statics which should be linked to the support system. (Currently deactivated)

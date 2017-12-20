@@ -3,7 +3,7 @@ private [ "_resupply_dist", "_repair_increment", "_repair_speed", "_repair_altit
 _repair_amount = 0.01;
 _repair_speed = 2;
 _repair_altitude = 2;
-_resupply_dist = 30;
+_resupply_dist = 60;
 _rearm_time = 60;
 _refuel_amount = 0.02;
 _rearm_ticker = 0;

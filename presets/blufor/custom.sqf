@@ -203,7 +203,8 @@ support_vehicles = [
 	["ACE_Wheel",10,0,0],
 	["ACE_Track",10,0,0],
 	["rhsusf_M977A4_REPAIR_usarmy_d",325,0,75],							//M977A4 Repair
-	["rhsusf_M978A4_usarmy_d",125,0,275],								//M978A4 Fuel
+	["LOP_IA_HEMTT_Fuel_D",125,0,275],
+	//HEMTT Fuel
 	["rhsusf_M977A4_AMMO_usarmy_d",125,200,75],							//M977A4 Ammo
 	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
 	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
