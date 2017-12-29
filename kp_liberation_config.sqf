@@ -13,7 +13,7 @@ KP_liberation_medical_vehicles = [
 	"rhsusf_M1230a1_usarmy_d",
 	"rhsusf_M1230a1_usarmy_wd"
 ];
-setmass
+
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
 KP_liberation_ace_crates = [
 	"ACE_Box_82mm_Mo_HE",
@@ -65,11 +65,11 @@ KP_liberation_arsenal = 0;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 360;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 60;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file.	*/
@@ -87,10 +87,10 @@ GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker 
 
 GRLIB_fob_range = 125;																							// Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [10, 10, 5];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
+GRLIB_recycling_percentage = 0.75;																				// Percentage of resources you get back from recycling.
+KP_liberation_production_interval = 15				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;																						// Range to activate a sector.
 GRLIB_capture_size = 175;																						// Range to capture a sector.
@@ -108,20 +108,20 @@ GRLIB_sector_cap = 180								* GRLIB_unitcap;											// Cap for sector defen
 GRLIB_battlegroup_cap = 150							* GRLIB_unitcap;											// Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150								* GRLIB_unitcap;											// Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 5;																				// Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 3;																			// Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 2;																			// Civil Reputation penalty for stealing a civilian vehicle.
-KP_liberation_cr_resistance_penalty = 3;																		// Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 5;																				// Civil Reputation gain for liberate a sector.
-KP_liberation_cr_wounded_chance = 35;																			// Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;																				// Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_kill_penalty = 10;																				// Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_building_penalty = 1;																			// Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 1;																			// Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_resistance_penalty = 2;																		// Civil Reputation penalty for killing a friendly resistance soldier.
+KP_liberation_cr_sector_gain = 10;																				// Civil Reputation gain for liberate a sector.
+KP_liberation_cr_wounded_chance = 50;																			// Chance (0-100) that there are wounded civilians right after capturing a sector.
+KP_liberation_cr_wounded_gain = 10;																				// Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;																				// Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;																				// Civil Informant maximum spawn time. (seconds)
 KP_liberation_civinfo_chance = 75;																				// Civil Informant spawn chance. (0-100)
-KP_liberation_civinfo_intel = 5;																				// Civil Informant intel amount.
+KP_liberation_civinfo_intel = 10;																				// Civil Informant intel amount.
 KP_liberation_civinfo_duration = 1200;																			// Civil Informant staytime until despawning. (seconds)
-KP_liberation_civinfo_task_chance = 40;																			// Chance (0-100) that the delivered informant will spawn a time critical task.
+KP_liberation_civinfo_task_chance = 50;																			// Chance (0-100) that the delivered informant will spawn a time critical task.
 KP_liberation_civinfo_task_duration = 900;																		// Duration until the task will despawn if no player is near. (seconds)
 
 KP_liberation_convoy_ambush_chance = 2;																			// Chance that a logistic convoy will be ambushed, when civil reputation is low.
@@ -129,9 +129,9 @@ KP_liberation_convoy_ambush_duration = 1200;																	// Duration of the 
 
 KP_liberation_resistance_tier2 = 30;																			// At which strength (0-100) the guerilla forces will be at tier 2?
 KP_liberation_resistance_tier3 = 70;																			// At which strength (0-100) the guerilla forces will be at tier 3?
-KP_liberation_resistance_at_chance = 20;																		// Chance that a guerilla unit has a RPG. (tier 2 and 3)
+KP_liberation_resistance_at_chance = 30;																		// Chance that a guerilla unit has a RPG. (tier 2 and 3)
 KP_liberation_resistance_sector_chance = 35;																	// Chance that a guerilla squad will join an ongoing sector attack.
-KP_liberation_resistance_ambush_chance = 30;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
+KP_liberation_resistance_ambush_chance = 70;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.	

@@ -28,16 +28,6 @@ class CfgDebriefing
 		pictureBackground = "";
 	};
 };
-class ACE_Settings {
-    class ace_cookoff_enable {
-	value = 1;
-	typename = "bool";
-    };
-    class ace_cookoff_enableAmmoCookoff {
-	value = 0;
-	typename = "bool";
-    };
-};
 
 //Xian Edits
 class CfgLeaflets

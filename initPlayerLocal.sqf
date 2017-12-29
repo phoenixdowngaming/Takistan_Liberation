@@ -1,5 +1,5 @@
-player setCustomAimCoef 0.25;
-player addMPEventhandler ["MPRespawn", {player setCustomAimCoef 0.25}];
+player setCustomAimCoef 0.2;
+player addMPEventhandler ["MPRespawn", {player setCustomAimCoef 0.2}];
  
 player setUnitRecoilCoefficient 1.0;
 player addEventHandler ["Respawn", {player setUnitRecoilCoefficient 1.0}];

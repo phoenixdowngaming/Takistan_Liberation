@@ -13,11 +13,11 @@ FOB_typename = "Land_Cargo_HQ_V3_F";									// This is the main FOB HQ building
 FOB_box_typename = "B_Slingload_01_Cargo_F";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
 FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";				// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
 Arsenal_typename = "B_supplyCrate_F";									// This is the virtual arsenal as portable supply crates.  																				Default is "B_supplyCrate_F".
-Respawn_truck_typename = "rhsusf_m1232_m2_usarmy_d";					// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
+Respawn_truck_typename = "rhsusf_m1220_m2_usarmy_d";					// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
 huron_typename = "RHS_UH60M_d";											// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
 crewman_classname = "rhsusf_army_ocp_combatcrewman";					// This defines the crew for vehicles. 																									Default is "B_crew_F".
 pilot_classname = "rhsusf_army_ocp_helipilot";							// This defines the pilot for helicopters. 																								Default is "B_Helipilot_F".
-KP_liberation_little_bird_classname = "RHS_MELB_MH6M";					// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
+KP_liberation_little_bird_classname = "RHS_CH_47F_light";				// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
 KP_liberation_boat_classname = "B_Boat_Transport_01_F"; 				// These are the boats which spawn at the stern of the Freedom.																			Default is "B_Boat_Transport_01_F".
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_d";			// These are the trucks which are used in the logistic convoy system.																	Default is "B_Truck_01_transport_F".
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";		// A small storage area for resources.																									Default is "ContainmentArea_02_sand_F".
@@ -65,27 +65,26 @@ infantry_units = [
 
 light_vehicles = [
 	["rhsusf_m1025_d",25,0,10],											//M1025A2 (Unarmed)
-	["rhsusf_m1025_d_m2",50,20,50],										//M1025A2 (M2)
-	["rhsusf_m1025_d_Mk19",50,100,50],									//M1025A2 (Mk19)
-	["rhsusf_m1220_m2_usarmy_d",75,20,100],								//M1220 (M2)
-	["rhsusf_m1220_mk19_usarmy_d",75,100,100],							//M1220 (Mk19)
-	["rhsusf_m113d_usarmy",100,20,100],									//M113A3 (M2)
-	["rhsusf_m113d_usarmy_MK19",100,100,100]							//M113A3 (Mk19)
+	["rhsusf_m1025_d_m2",50,10,50],										//M1025A2 (M2)
+	["rhsusf_m1025_d_Mk19",50,50,50],									//M1025A2 (Mk19)
+	["rhsusf_m113d_usarmy",75,10,75],									//M113A3 (M2)
+	["rhsusf_m113d_usarmy_MK19",75,50,75]							//M113A3 (Mk19)
 ];
 
 heavy_vehicles = [
-	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",75,20,50],					//M1083 (HMG)
-	["rhsusf_M977A4_BKIT_M2_usarmy_d",100,20,50],						//M977A4 BKIT (HMG)
-	["RHS_M2A2_BUSKI",300,200,150],										//M2A2ODS (Busk I)
-	["RHS_M2A3_BUSKIII",300,250,175],									//M2A3 (Busk III)
+	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",75,10,50],					//M1083 (HMG)
+	["rhsusf_M977A4_BKIT_M2_usarmy_d",100,10,50],						//M977A4 BKIT (HMG)
+	["RHS_M6",300,250,175],												//M6A2
+	["RHS_M2A2_BUSKI",200,200,150],										//M2A2ODS (Busk I)
+	["RHS_M2A3_BUSKIII",200,250,175],									//M2A3 (Busk III)
 	["rhsusf_m1a1aim_tuski_d",400,350,225],								//M1A1SA (Tusk I)
-	["rhsusf_m1a2sep1tuskiid_usarmy",500,400,250],						//M1A2SEPv1 (Tusk II)
-	["RHS_M6",300,250,175]												//M6A2
+	["rhsusf_m1a2sep1tuskiid_usarmy",500,400,250]						//M1A2SEPv1 (Tusk II)
 ];
 
 air_vehicles = [
 	["RHS_UH60M_ESSS2_d",250,300,150],									//UH-60M
 	["RHS_UH60M_ESSS_d",300,500,150],									//UH-60M ESSS
+	["RHS_MELB_AH6M",200,250,150],										//MELB
 	["RHS_UH1Y_d_GS",225,200,125],										//UH-1Y (Ground Suppression)
 	["RHS_CH_47F_10",275,80,175],										//CH-47 Chinook (Armed)
 	["rhsusf_CH53E_USMC_D",300,0,175],									//CH-53E Super Stallion
@@ -186,7 +185,8 @@ buildings = [
 ];
 
 support_vehicles = [
-	[Arsenal_typename,100,200,0],
+	["B_APC_Tracked_01_CRV_F",750,750,750],								//bobcat
+	[Arsenal_typename,100,200,0],										//
 	[Respawn_truck_typename,100,0,50],
 	[FOB_box_typename,300,500,0],
 	[FOB_truck_typename,300,500,75],
@@ -203,8 +203,7 @@ support_vehicles = [
 	["ACE_Wheel",10,0,0],
 	["ACE_Track",10,0,0],
 	["rhsusf_M977A4_REPAIR_usarmy_d",325,0,75],							//M977A4 Repair
-	["LOP_IA_HEMTT_Fuel_D",125,0,275],
-	//HEMTT Fuel
+	["LOP_IA_HEMTT_Fuel_D",125,0,275],									//HEMTT Fuel
 	["rhsusf_M977A4_AMMO_usarmy_d",125,200,75],							//M977A4 Ammo
 	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
 	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
@@ -312,7 +311,7 @@ elite_vehicles = [
 	"B_UAV_02_dynamicLoadout_F",										//MQ-4A Greyhawk
 	"B_T_UAV_03_dynamicLoadout_F",										//MQ-12 Falcon
 	"B_UAV_05_F",														//UCAV Sentinel
-	"RHS_A10",															//A-10A (CAS)
+	"B_Plane_CAS_01_dynamicLoadout_F",									//A-10A (CAS)
 	"FIR_F15C",															//F-15C Eagle
 	"FIR_F15D",															//F-15D Eagle
 	"FIR_F15E",															//F-15E Strike Eagle
