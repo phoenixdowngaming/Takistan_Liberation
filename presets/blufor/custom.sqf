@@ -197,9 +197,6 @@ support_vehicles = [
 	["rhsusf_M977A4_REPAIR_usarmy_d",175,0,75],							//M977A4 Repair
 	["rhsusf_M977A4_AMMO_usarmy_d",75,100,75],							//M977A4 Ammo
 	["rhsusf_M978A4_usarmy_d",75,0,175],								//M978A4 Fuel
-	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
-	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
-	["B_Slingload_01_Ammo_F",75,200,0],									//Huron Ammo
 	["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",400,400,400],				//bobcat
 	["ACE_Box_82mm_Mo_HE",50,40,0],
 	["ACE_Box_82mm_Mo_Smoke",50,10,0],
@@ -209,8 +206,7 @@ support_vehicles = [
 	[KP_liberation_recycle_building,250,0,0],
 	[KP_liberation_air_vehicle_building,1000,0,0],
 	[KP_liberation_heli_slot_building,250,0,0],
-	[KP_liberation_plane_slot_building,500,0,0],
-	["LOP_IA_HEMTT_Fuel_D",75,0,175]									//HEMTT Fuel
+	[KP_liberation_plane_slot_building,500,0,0]
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
