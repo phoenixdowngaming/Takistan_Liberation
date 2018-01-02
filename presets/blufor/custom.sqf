@@ -96,11 +96,11 @@ air_vehicles = [
 ];
 
 static_vehicles = [
-	["RHS_M2StaticMG_MiniTripod_D",25,40,0],							//Mk2 HMG .50
-	["RHS_M2StaticMG_D",25,40,0],										//Mk2 HMG .50 (Raised)
-	["RHS_MK19_TriPod_D",25,60,0],										//Mk19 GMG 20mm
-	["RHS_TOW_TriPod_D",50,100,0],										//TOW (AT)
-	["RHS_Stinger_AA_pod_D",50,100,0],									//Stinger (AA)
+	["RHS_M2StaticMG_MiniTripod_D",5,10,0],							//Mk2 HMG .50
+	["RHS_M2StaticMG_D",5,10,0],										//Mk2 HMG .50 (Raised)
+	["RHS_MK19_TriPod_D",5,60,0],										//Mk19 GMG 20mm
+	["RHS_TOW_TriPod_D",5,100,0],										//TOW (AT)
+	["RHS_Stinger_AA_pod_D",5,100,0],									//Stinger (AA)
 	["RHS_M252_D",80,150,0],											//Mk6 Mortar
 	["RHS_M119_D",100,200,0]											//M119A2
 ];
@@ -185,29 +185,32 @@ buildings = [
 ];
 
 support_vehicles = [
-	["B_APC_Tracked_01_CRV_F",750,750,750],								//bobcat
 	[Arsenal_typename,100,200,0],										//
 	[Respawn_truck_typename,100,0,50],
 	[FOB_box_typename,300,500,0],
 	[FOB_truck_typename,300,500,75],
+	["ACE_medicalSupplyCrate_advanced",5,0,0],
+	["ACE_Box_Ammo",0,5,0],												//ammo
+	["Land_CanisterFuel_F",0,0,5],
+	["ACE_Wheel",5,0,0],
+	["ACE_Track",10,0,0],
+	["rhsusf_M977A4_REPAIR_usarmy_d",175,0,75],							//M977A4 Repair
+	["rhsusf_M977A4_AMMO_usarmy_d",75,100,75],							//M977A4 Ammo
+	["rhsusf_M978A4_usarmy_d",75,0,175],								//M978A4 Fuel
+	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
+	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
+	["B_Slingload_01_Ammo_F",75,200,0],									//Huron Ammo
+	["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",400,400,400],				//bobcat
+	["ACE_Box_82mm_Mo_HE",50,40,0],
+	["ACE_Box_82mm_Mo_Smoke",50,10,0],
+	["ACE_Box_82mm_Mo_Illum",50,10,0],
 	[KP_liberation_small_storage_building,0,0,0],
 	[KP_liberation_large_storage_building,0,0,0],
 	[KP_liberation_recycle_building,250,0,0],
 	[KP_liberation_air_vehicle_building,1000,0,0],
 	[KP_liberation_heli_slot_building,250,0,0],
 	[KP_liberation_plane_slot_building,500,0,0],
-	["ACE_medicalSupplyCrate_advanced",50,0,0],
-	["ACE_Box_82mm_Mo_HE",50,40,0],
-	["ACE_Box_82mm_Mo_Smoke",50,10,0],
-	["ACE_Box_82mm_Mo_Illum",50,10,0],
-	["ACE_Wheel",10,0,0],
-	["ACE_Track",10,0,0],
-	["rhsusf_M977A4_REPAIR_usarmy_d",325,0,75],							//M977A4 Repair
-	["LOP_IA_HEMTT_Fuel_D",125,0,275],									//HEMTT Fuel
-	["rhsusf_M977A4_AMMO_usarmy_d",125,200,75],							//M977A4 Ammo
-	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
-	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
-	["B_Slingload_01_Ammo_F",75,200,0]									//Huron Ammo
+	["LOP_IA_HEMTT_Fuel_D",75,0,175]									//HEMTT Fuel
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
@@ -308,16 +311,6 @@ elite_vehicles = [
 	"rhsusf_m1a2sep1tuskiid_usarmy",									//M1A2SEPv1 (Tusk II)
 	"rhsusf_m109d_usarmy",												//M109A6
 	"RHS_AH64D",														//AH-64D (Multi-Role)
-	"B_UAV_02_dynamicLoadout_F",										//MQ-4A Greyhawk
-	"B_T_UAV_03_dynamicLoadout_F",										//MQ-12 Falcon
-	"B_UAV_05_F",														//UCAV Sentinel
 	"B_Plane_CAS_01_dynamicLoadout_F",									//A-10A (CAS)
-	"FIR_F15C",															//F-15C Eagle
-	"FIR_F15D",															//F-15D Eagle
-	"FIR_F15E",															//F-15E Strike Eagle
-	"JS_JC_FA18E",														//F/A-18 E Super Hornet
-	"JS_JC_FA18F",														//F/A-18 F Super Hornet
-	"B_Plane_Fighter_01_F",												//F/A-181 Black Wasp II
-	"B_Plane_Fighter_01_Stealth_F",										//F/A-181 Black Wasp II (Stealth)
-	"B_T_VTOL_01_armed_F"												//V-44 X Blackfish (Armed)
+	"rhsusf_f22"														//F-22
 ];

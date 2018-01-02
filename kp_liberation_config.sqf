@@ -4,6 +4,8 @@ CONFIG FILE FOR KP LIBERATION
 
 // Vehicle classnames which also function as ACE medical vehicles.
 KP_liberation_medical_vehicles = [
+	"rhsusf_m1220_m2_usarmy_d",
+	"RHS_UH60M_d",
 	"B_Truck_01_medical_F",
 	"B_T_Truck_01_medical_F",
 	"rhsusf_m113_usarmy_medical",
@@ -16,6 +18,8 @@ KP_liberation_medical_vehicles = [
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
 KP_liberation_ace_crates = [
+	"ACE_Box_Ammo",
+	"ACE_medicalSupplyCrate_advanced",
 	"ACE_Box_82mm_Mo_HE",
 	"ACE_Box_82mm_Mo_Smoke",
 	"ACE_Box_82mm_Mo_Illum",
@@ -310,6 +314,7 @@ box_transport_config = [
 /* Various other settings.
 Everything the AI troups should be able to resupply from.	*/
 ai_resupply_sources = [
+	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
 	"B_Truck_01_ammo_F",
 	"B_T_Truck_01_ammo_F",
 	"B_Slingload_01_Ammo_F",
@@ -322,11 +327,13 @@ ai_resupply_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
 	"BW_LKW15T_Ammo_F",
+	"ACE_Box_Ammo",
 	"rhs_gaz66_ammo_msv"
 ];
 
 // Everything that can resupply other vehicles.
 vehicle_repair_sources = [
+	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
 	"C_Offroad_01_repair_F",
 	"B_Truck_01_Repair_F",
 	"B_T_Truck_01_Repair_F",
@@ -343,6 +350,7 @@ vehicle_repair_sources = [
 ];
 
 vehicle_rearm_sources = [
+	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
 	"B_Truck_01_ammo_F",
 	"B_T_Truck_01_ammo_F",
 	"B_Slingload_01_Ammo_F",
@@ -358,6 +366,7 @@ vehicle_rearm_sources = [
 ];
 
 vehicle_refuel_sources = [
+	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
 	"C_Van_01_fuel_F",
 	"C_Truck_02_fuel_F",
 	"B_Truck_01_fuel_F",

@@ -31,7 +31,6 @@ if (!isDedicated && hasInterface) then {
 };
 [] execVM "VCOMAI\init.sqf";
 [] execVM "scripts\lessExplosions.sqf";
-[] execVM "scripts\NRE_earplugs.sqf";
 enableSentences false;
 showSubtitles false;
 player addMPEventHandler ["MPRespawn", { enableSentences false; showSubtitles false;
