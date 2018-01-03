@@ -43,7 +43,7 @@ KP_liberation_preset_blufor = 0;
 1 = Apex Tanoa
 2 = Project OPFOR (Takistan)
 3 = RHS AFRF */
-KP_liberation_preset_opfor = 2;
+KP_liberation_preset_opfor = 0;
 
 /* Resistance preset:
 0 = custom (default vanilla)

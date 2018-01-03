@@ -10,7 +10,7 @@ if (VCOM_Adrenaline) then
 };
 
 _DynBlur = ppEffectCreate ["DynamicBlur", 5];
-_DynBlur ppEffectAdjust [0.3]; 
+_DynBlur ppEffectAdjust [0.4]; 
 _DynBlur ppEffectEnable true; 
 _DynBlur ppEffectCommit 0; 
 
