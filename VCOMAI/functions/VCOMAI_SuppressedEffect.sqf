@@ -1,7 +1,7 @@
 private ["_DynBlur", "_FlmGr", "_cc"];
 
 player setCustomAimCoef VCOM_SuppressionVar;
-player spawn {sleep 8; player setCustomAimCoef 1;};
+player spawn {sleep 8; player setCustomAimCoef 0.1;};
 
 if (VCOM_Adrenaline) then
 {
@@ -10,7 +10,7 @@ if (VCOM_Adrenaline) then
 };
 
 _DynBlur = ppEffectCreate ["DynamicBlur", 5];
-_DynBlur ppEffectAdjust [0.5]; 
+_DynBlur ppEffectAdjust [0.3]; 
 _DynBlur ppEffectEnable true; 
 _DynBlur ppEffectCommit 0; 
 
