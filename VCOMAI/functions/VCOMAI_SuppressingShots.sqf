@@ -56,8 +56,8 @@ if (VCOM_CurrentlySuppressing < VCOM_CurrentlySuppressingLimit) then
 						if (isPlayer _x) then {remoteExec ["PSup",_x];}
 						else
 						{
-							_x setCustomAimCoef VCOM_SuppressionVar;
-							_x spawn {sleep 8; _this setCustomAimCoef 3;};
+							_x setCustomAimCoef 10;
+							_x spawn {sleep 10; _this setCustomAimCoef 1;};
 						};
 					};
 					if (VCOM_Adrenaline) then

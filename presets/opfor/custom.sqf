@@ -2,6 +2,7 @@
 Needed Mods:
 - Project OPFOR
 - RHS USAF
+- RHS AFRF
 
 Optional Mods:
 - None
@@ -69,7 +70,7 @@ opfor_vehicles = [
 	"LOP_TKA_BTR70",													//BTR-70
 	"rhs_gaz66_zu23_vdv",												//ZSU-yeep
 	"rhs_ural_zu23_vdv_1",												//ZSU-truck
-	"LOP_TKA_T55",														//T-55A
+	"rhs_t80ue1",														//T-80UM
 	"LOP_TKA_T72BB",													//T-72B
 	"LOP_TKA_T72BB"														//T-72B
 ];
@@ -79,14 +80,13 @@ opfor_vehicles_low_intensity = [
 	"LOP_TKA_UAZ_DshKM",												//UAZ-3151 (DShKM)
 	"LOP_TKA_BMP1",														//BMP-1
 	"LOP_TKA_BMP1D",													//BMP-1D
+	"LOP_TKA_T34",														//T-34
 	"LOP_TKA_BTR70",													//Btr70
 	"LOP_TKA_BTR60"														//BTR-60PB
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-	"LOP_TKA_UAZ",														//UAZ-3151 (Covered)
-	"LOP_TKA_UAZ_DshKM",												//UAZ-3151 (DShKM)
 	"LOP_TKA_BTR70",													//btr70
 	"LOP_TKA_UAZ_SPG",													//UAZ-3151 (SPG-9)
 	"LOP_TKA_Ural_open",												//Ural-4320 Transport
@@ -96,7 +96,7 @@ opfor_battlegroup_vehicles = [
 	"LOP_TKA_BTR70",													//BTR-70
 	"rhs_gaz66_zu23_vdv",												//ZSU-yeep
 	"rhs_ural_zu23_vdv_1",												//ZSU-truck
-	"LOP_TKA_T55",														//T-55A
+	"rhs_t80ue1",														//T-80UM
 	"LOP_TKA_T72BB",													//T-72B
 	"LOP_TKA_T72BB",													//T-72B
 	"LOP_TKA_Mi24V_AT",													//Mi-24P (AT)
@@ -117,6 +117,7 @@ opfor_battlegroup_vehicles_low_intensity = [
 	"rhs_ural_zu23_vdv_1",												//ZSU-truck
 	"LOP_TKA_T55",														//T-55A
 	"LOP_TKA_T55",														//T-55A
+	"LOP_TKA_T72BB",													//T-72B
 	"LOP_TKA_Mi24V_AT",													//Mi-24P (AT)
 	"LOP_TKA_Mi24V_UPK23",												//Mi-24V (UPK)
 	"LOP_TKA_Mi8MT_Cargo"												//Mi-8MT (Cargo)

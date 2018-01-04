@@ -1,5 +1,5 @@
 respawn = 3;
-respawndelay = 5;
+respawndelay = 30;
 respawnButton = 1;
 disabledAI = true;
 

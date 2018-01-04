@@ -3,7 +3,7 @@ VCOMAI_Func =
 //Enable or disable the INGAME setting menu. This is off by default due to compatibility issues with multiple mods and scripts. And I am tired of hearing people complain all the time :D 
 VCOM_AIINGAMEMENU = false;
 //Variable for enabling/disabling skill changes for AI. True is on, False is off.
-VCOM_AISkillEnabled = false;
+VCOM_AISkillEnabled = true;
 //Variable for finding out which config was loaded.
 VCOM_AIConfig = "Mission Folder";
 //Turn this on to see certain debug messages. 1 is on
@@ -15,7 +15,7 @@ NOAI_FOR_PLAYERLEADERS = 1;
 //Will AI garrison static weapons nearby?
 VCOM_STATICGARRISON = 1;
 //How far can the AI hear gunshots from?
-VCOM_HEARINGDISTANCE = 500;
+VCOM_HEARINGDISTANCE = 600;
 //Should AI be able to call for artillery. 1 = YES 0 = NO
 VCOM_Artillery = 1;
 //What should the dispersion be for AI artillery rounds? In meters.
@@ -41,9 +41,9 @@ VCOM_RainImpact = true;
 //How much should rain impact the accuracy of AI? Default = 3. Default formula is -> _WeatherCheck = (rain)/3; "rain" is on a scale from 0 to 1. 1 Being very intense rain.
 VCOM_RainPercent = 3;
 //Should AI and players have an additional layer of suppression that decreases aiming when suppressed? Default = true;
-VCOM_Suppression = false;
+VCOM_Suppression = true;
 //How much should suppression impact both AI and player aiming? Default is 5. Normal ArmA is 1.
-VCOM_SuppressionVar = 0;
+VCOM_SuppressionVar = 0.5;
 //Should AI/players be impacted by adrenaline? This provides players and AI with a small speed boost to animations to assist with cover seeking and positioning for a short time. Default = true;
 VCOM_Adrenaline = false;
 //How much of a speed boost should players/AI recieve? Default = 1.35; (1 is ArmA's normal speed).
@@ -53,19 +53,19 @@ VCOM_CurrentlyMovingLimit = 6;
 //How many AI UNITS can be suppressing others at once?
 VCOM_CurrentlySuppressingLimit = 12;
 //The distance a unit needs to be away for Vcom AI to temporary disable itself upon the unit? The AI unit will also need to be out of combat.
-VCOM_DisableDistance = 1000;
+VCOM_DisableDistance = 2000;
 //How many AI can be checking roles/equipment/additional commands at once? This will impact FPS of AI in and out of battle. The goal is to limit how many benign commands are being run at once and bogging down a server with over a couple HUNDRED AI.
 VCOM_BasicCheckLimit = 25;
 //How many squad leaders can be executing advanced code at once.
 VCOM_LeaderExecuteLimit = 15;
 //How low should the FPS be, before Vcom pauses simulation. This will not disable simulation on AI - they will run default Bohemia AI.
-VCOM_FPSFreeze = 10;
+VCOM_FPSFreeze = 20;
 //Should the AI consider stealing/using empty ground vehicles?
 VCOM_VehicleUse = true;
 //Should the AI notice IR lasers?
-VCOM_IRLaser = false;
+VCOM_IRLaser = true;
 //The distance, in meters, of how far AI will look for empty unlocked vehicles to steal.
-VCOM_AIDISTANCEVEHPATH = 150;
+VCOM_AIDISTANCEVEHPATH = 300;
 
 //The longer an AI's target stays in 1 location, the more accurate and aware of the target the AI becomes.DEFAULT = [WEST,EAST,CIVILIAN,RESISTANCE];
 VCOM_IncreasingAccuracy = true;
@@ -74,7 +74,7 @@ VCOM_SideBasedMovement = [WEST,EAST,RESISTANCE];
 //VCOM_SideBasedExecution- Remove sides from the array below to remove that specific AI side from executing any of the VCOMAI scripts at all. DEFAULT = [WEST,EAST,CIVILIAN,RESISTANCE];
 VCOM_SideBasedExecution = [WEST,EAST,RESISTANCE];
 //Distance AI will respond to call of help from each other
-VCOM_Unit_AIWarnDistance = 1000;
+VCOM_Unit_AIWarnDistance = 1500;
 //Distance the AI will attempt to flank around the enemy. I.E. How far off a waypoint, or around the enemy squad, the AI are willing to go in combat.
 VCOM_WaypointDistance = 300;
 //Switching this to true will enable side specific skill settings. Side specific skills get added IN ADDITION TO the normal ranked skill.
@@ -129,13 +129,13 @@ AccuracyFunctionRank6 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -168,13 +168,13 @@ AccuracyFunctionRank5 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -207,13 +207,13 @@ AccuracyFunctionRank4 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -246,13 +246,13 @@ AccuracyFunctionRank3 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -285,13 +285,13 @@ AccuracyFunctionRank2 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -324,13 +324,13 @@ AccuracyFunctionRank1 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -363,13 +363,13 @@ AccuracyFunctionRank0 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.05 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.05 + (random 0.05))];
-		_Unit setSkill ["spotDistance",(0.6 + (random 0.1))];
-		_Unit setSkill ["spotTime",(0.6 + (random 0.1))];
-		_Unit setSkill ["courage",(0.7 + (random 0.3))];
+		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
+		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
+		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
