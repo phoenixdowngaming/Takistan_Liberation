@@ -85,18 +85,19 @@ air_vehicles = [
 	["RHS_UH60M_ESSS2_d",250,300,150],									//UH-60M
 	["RHS_UH60M_ESSS_d",300,500,150],									//UH-60M ESSS
 	["RHS_MELB_AH6M",200,250,150],										//MELB
-	["RHS_UH1Y_d_GS",225,200,125],										//UH-1Y (Ground Suppression)
-	["RHS_CH_47F_10",275,80,175],										//CH-47 Chinook (Armed)
-	["rhsusf_CH53E_USMC_D",300,0,175],									//CH-53E Super Stallion
+	["RHS_UH1Y_d_GS",200,200,125],										//UH-1Y (Ground Suppression)
+	["RHS_CH_47F_10",275,75,150],										//CH-47 Chinook (Armed)
+	["rhsusf_CH53E_USMC_D",300,300,300],								//CH-53E Super Stallion
 	["RHS_AH1Z",500,500,200],											//AH-1Z (Multi-Role)
 	["RHS_AH64D",750,750,250],											//AH-64D (Multi-Role)
 	["B_Plane_CAS_01_dynamicLoadout_F",2500,2500,2500],					//A-10A (CAS)
-	["rhsusf_f22",2500,2500,2500]										//f22
+	["rhsusf_f22",2500,2500,2500],										//f22
+	["RHS_C130J",1000,0,1000]											//C130
 
 ];
 
 static_vehicles = [
-	["RHS_M2StaticMG_MiniTripod_D",5,10,0],							//Mk2 HMG .50
+	["RHS_M2StaticMG_MiniTripod_D",5,10,0],								//Mk2 HMG .50
 	["RHS_M2StaticMG_D",5,10,0],										//Mk2 HMG .50 (Raised)
 	["RHS_MK19_TriPod_D",5,60,0],										//Mk19 GMG 20mm
 	["RHS_TOW_TriPod_D",5,100,0],										//TOW (AT)
@@ -198,9 +199,6 @@ support_vehicles = [
 	["rhsusf_M977A4_AMMO_usarmy_d",75,100,75],							//M977A4 Ammo
 	["rhsusf_M978A4_usarmy_d",75,0,175],								//M978A4 Fuel
 	["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",400,400,400],				//bobcat
-	["ACE_Box_82mm_Mo_HE",50,40,0],
-	["ACE_Box_82mm_Mo_Smoke",50,10,0],
-	["ACE_Box_82mm_Mo_Illum",50,10,0],
 	[KP_liberation_small_storage_building,0,0,0],
 	[KP_liberation_large_storage_building,0,0,0],
 	[KP_liberation_recycle_building,250,0,0],

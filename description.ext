@@ -11,7 +11,7 @@ onLoadMission = "www.killahpotatoes.de";
 author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
 onLoadName = $STR_MISSION_TITLE;
 
-joinUnassigned = 1;
+joinUnassigned = 0;
 
 #include "GREUH\UI\GREUH_interface.hpp"
 #include "ui\liberation_interface.hpp"

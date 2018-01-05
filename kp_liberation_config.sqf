@@ -5,6 +5,7 @@ CONFIG FILE FOR KP LIBERATION
 // Vehicle classnames which also function as ACE medical vehicles.
 KP_liberation_medical_vehicles = [
 	"rhsusf_m1220_m2_usarmy_d",
+	"rhs_CH53E_USMC_D",
 	"RHS_UH60M_d",
 	"B_Truck_01_medical_F",
 	"B_T_Truck_01_medical_F",
@@ -91,10 +92,10 @@ GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker 
 
 GRLIB_fob_range = 125;																							// Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [10, 10, 5];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [15, 10, 2];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 1.0;																				// Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
+KP_liberation_production_interval = 20				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;																						// Range to activate a sector.
 GRLIB_capture_size = 175;																						// Range to capture a sector.
@@ -232,7 +233,6 @@ blacklisted_from_arsenal = [
 KP_liberation_allowed_items_extension = [
 	"ItemRadioAcreFlagged",
 	"rhs_m72a7_mag",
-	"rhsusf_acc_anpeq15_bk_light_h",
 	"rhs_weap_M136_used",
 	"rhs_m136_mag",
 	"rhs_m136_hedp_mag",
@@ -315,6 +315,9 @@ box_transport_config = [
 Everything the AI troups should be able to resupply from.	*/
 ai_resupply_sources = [
 	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+	"rhs_CH53E_USMC_D",
+	"RHS_CH_47F_10",
+	"RHS_CH_47F_light",
 	"B_Truck_01_ammo_F",
 	"B_T_Truck_01_ammo_F",
 	"B_Slingload_01_Ammo_F",
@@ -334,7 +337,10 @@ ai_resupply_sources = [
 // Everything that can resupply other vehicles.
 vehicle_repair_sources = [
 	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+	"RHS_CH_47F_10",
+	"RHS_CH_47F_light",
 	"C_Offroad_01_repair_F",
+	"rhs_CH53E_USMC_D",
 	"B_Truck_01_Repair_F",
 	"B_T_Truck_01_Repair_F",
 	"B_Slingload_01_Repair_F",
@@ -351,6 +357,9 @@ vehicle_repair_sources = [
 
 vehicle_rearm_sources = [
 	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+	"RHS_CH_47F_10",
+	"RHS_CH_47F_light",
+	"rhs_CH53E_USMC_D",
 	"B_Truck_01_ammo_F",
 	"B_T_Truck_01_ammo_F",
 	"B_Slingload_01_Ammo_F",
@@ -367,6 +376,7 @@ vehicle_rearm_sources = [
 
 vehicle_refuel_sources = [
 	"rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+	"rhs_CH53E_USMC_D",
 	"C_Van_01_fuel_F",
 	"C_Truck_02_fuel_F",
 	"B_Truck_01_fuel_F",
