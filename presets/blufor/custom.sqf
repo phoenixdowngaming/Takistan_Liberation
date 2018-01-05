@@ -99,9 +99,9 @@ air_vehicles = [
 static_vehicles = [
 	["RHS_M2StaticMG_MiniTripod_D",5,10,0],								//Mk2 HMG .50
 	["RHS_M2StaticMG_D",5,10,0],										//Mk2 HMG .50 (Raised)
-	["RHS_MK19_TriPod_D",5,60,0],										//Mk19 GMG 20mm
-	["RHS_TOW_TriPod_D",5,100,0],										//TOW (AT)
-	["RHS_Stinger_AA_pod_D",5,100,0],									//Stinger (AA)
+	["RHS_MK19_TriPod_D",5,25,0],										//Mk19 GMG 20mm
+	["RHS_TOW_TriPod_D",5,50,0],										//TOW (AT)
+	["RHS_Stinger_AA_pod_D",5,50,0],									//Stinger (AA)
 	["RHS_M252_D",80,150,0],											//Mk6 Mortar
 	["RHS_M119_D",100,200,0]											//M119A2
 ];
