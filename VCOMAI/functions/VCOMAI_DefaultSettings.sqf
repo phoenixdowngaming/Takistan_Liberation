@@ -129,13 +129,13 @@ AccuracyFunctionRank6 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -168,13 +168,13 @@ AccuracyFunctionRank5 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -207,13 +207,13 @@ AccuracyFunctionRank4 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -246,13 +246,13 @@ AccuracyFunctionRank3 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -285,13 +285,13 @@ AccuracyFunctionRank2 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -324,13 +324,13 @@ AccuracyFunctionRank1 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
@@ -363,13 +363,13 @@ AccuracyFunctionRank0 =
 	
 	if !(_ClassnameSet) then
 	{
-		_Unit setSkill ["aimingAccuracy",(0.15 + (random 0.05))];
-		_Unit setSkill ["aimingShake",(0.9 + (random 0.05))];
+		_Unit setSkill ["aimingAccuracy",(0.31 + (random 0.05))];
+		_Unit setSkill ["aimingShake",(0.95 + (random 0.05))];
 		_Unit setSkill ["spotDistance",(0.7 + (random 0.1))];
 		_Unit setSkill ["spotTime",(0.9 + (random 0.1))];
 		_Unit setSkill ["courage",(0.9 + (random 0.1))];
 		_Unit setSkill ["commanding",1.0];
-		_Unit setSkill ["aimingSpeed",(0.3 + (random 0.1))];
+		_Unit setSkill ["aimingSpeed",(0.5 + (random 0.1))];
 		_Unit setSkill ["general",1.0];
 		_Unit setSkill ["endurance",1.0];
 		_Unit setSkill ["reloadSpeed",(0.7 + (random 0.3))];
