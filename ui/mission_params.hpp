@@ -188,7 +188,7 @@ class Params
 		title = $STR_PARAMS_ARSENALUSEPRESET;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_NORESTRICTIONS, $STR_PARAMS_USEPRESET };
-		default = 1;
+		default = 0;
 	};
 	class MapMarkers {
 		title = $STR_PARAMS_MAPMARKERS;
@@ -212,7 +212,7 @@ class Params
 		title = $STR_PARAMS_MOBILEARSENAL;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 0;
+		default = 1;
 	};
 	class AiLogistics {
 		title = $STR_PARAMS_AILOGISTICS;
