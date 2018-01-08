@@ -5,6 +5,9 @@ CONFIG FILE FOR KP LIBERATION
 // Vehicle classnames which also function as ACE medical vehicles.
 KP_liberation_medical_vehicles = [
 	"rhsusf_m1220_m2_usarmy_d",
+	"RHS_M6",
+	"RHS_M2A2_BUSKI",
+	"RHS_M2A3_BUSKIII",
 	"rhs_CH53E_USMC_D",
 	"RHS_UH60M_d",
 	"B_Truck_01_medical_F",
