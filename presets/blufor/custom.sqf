@@ -65,26 +65,30 @@ infantry_units = [
 
 light_vehicles = [
 	["rhsusf_m1025_d",25,0,10],											//M1025A2 (Unarmed)
+	["rhsusf_m998_d_2dr_halftop",25,0,10],								//M998 2 Door HalfTop
+	["rhsusf_mrzr4_d",15,0,5],											//MRZR4 SOF Buggy (Unarmed)
 	["rhsusf_m1025_d_m2",50,10,50],										//M1025A2 (M2)
 	["rhsusf_m1025_d_Mk19",50,50,50],									//M1025A2 (Mk19)
-	["rhsusf_m113d_usarmy",75,10,75],									//M113A3 (M2)
-	["rhsusf_m113d_usarmy_MK19",75,50,75]							//M113A3 (Mk19)
+	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",75,10,50],					//M1083 (HMG)
+	["rhsusf_M977A4_BKIT_M2_usarmy_d",100,10,50]						//M977A4 BKIT (HMG)
 ];
 
 heavy_vehicles = [
-	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",75,10,50],					//M1083 (HMG)
-	["rhsusf_M977A4_BKIT_M2_usarmy_d",100,10,50],						//M977A4 BKIT (HMG)
+	["rhsusf_m113d_usarmy",75,10,75],									//M113A3 (M2)
+	["rhsusf_m113d_usarmy_MK19",75,50,75],								//M113A3 (Mk19)
+	["rhsusf_M1117_D",150,100,100],										//M1117 ASV
 	["RHS_M6",300,250,175],												//M6A2
 	["RHS_M2A2_BUSKI",200,200,150],										//M2A2ODS (Busk I)
 	["RHS_M2A3_BUSKIII",200,250,175],									//M2A3 (Busk III)
-	["rhsusf_m1a1aim_tuski_d",400,350,225],								//M1A1SA (Tusk I)
-	["rhsusf_m1a2sep1tuskiid_usarmy",500,400,250]						//M1A2SEPv1 (Tusk II)
+	["rhsusf_m1a1aim_tuski_d",400,350,300],								//M1A1SA (Tusk I)
+	["rhsusf_m1a2sep1tuskiid_usarmy",500,400,300]						//M1A2SEPv1 (Tusk II)
 ];
 
 air_vehicles = [
+	["RHS_MELB_MH6M",150,0,100],										//MH-6 RHS MELB
+	["RHS_MELB_AH6M",200,250,150],										//MELB
 	["RHS_UH60M_ESSS2_d",250,300,150],									//UH-60M
 	["RHS_UH60M_ESSS_d",300,500,150],									//UH-60M ESSS
-	["RHS_MELB_AH6M",200,250,150],										//MELB
 	["RHS_UH1Y_d_GS",200,200,125],										//UH-1Y (Ground Suppression)
 	["RHS_CH_47F_10",275,75,150],										//CH-47 Chinook (Armed)
 	["rhsusf_CH53E_USMC_D",300,300,300],								//CH-53E Super Stallion
@@ -93,7 +97,6 @@ air_vehicles = [
 	["B_Plane_CAS_01_dynamicLoadout_F",2500,2500,2500],					//A-10A (CAS)
 	["rhsusf_f22",2500,2500,2500],										//f22
 	["RHS_C130J",1000,0,1000]											//C130
-
 ];
 
 static_vehicles = [
@@ -201,7 +204,7 @@ support_vehicles = [
 	["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",400,400,400],				//bobcat
 	[KP_liberation_small_storage_building,0,0,0],
 	[KP_liberation_large_storage_building,0,0,0],
-	[KP_liberation_recycle_building,250,0,0],
+	[KP_liberation_recycle_building,0,0,0],
 	[KP_liberation_air_vehicle_building,1000,0,0],
 	[KP_liberation_heli_slot_building,250,0,0],
 	[KP_liberation_plane_slot_building,500,0,0]
@@ -302,9 +305,10 @@ blufor_squad_para = [
 // Elite vehicles that should be unlocked through military base capture.
 elite_vehicles = [
 	"rhsusf_m1a1aim_tuski_d",											//M1A1SA (Tusk I)
+	"RHS_M2A3_BUSKIII",													//M2A3 (Busk III)
 	"rhsusf_m1a2sep1tuskiid_usarmy",									//M1A2SEPv1 (Tusk II)
-	"rhsusf_m109d_usarmy",												//M109A6
 	"RHS_AH64D",														//AH-64D (Multi-Role)
 	"B_Plane_CAS_01_dynamicLoadout_F",									//A-10A (CAS)
 	"rhsusf_f22"														//F-22
 ];
+
