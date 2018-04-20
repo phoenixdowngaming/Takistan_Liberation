@@ -65,8 +65,8 @@ infantry_units = [
 
 light_vehicles = [
 	["rhsusf_m1025_d",25,0,10],											//M1025A2 (Unarmed)
-	["rhsusf_m998_d_2dr_halftop",25,0,10],								//M998 2 Door HalfTop
 	["rhsusf_mrzr4_d",20,0,10],											//MRZR4 SOF Buggy (Unarmed)
+	["LOP_IA_Offroad_m2",20,10,10],										//Technical (M2)
 	["rhsusf_m1025_d_m2",25,10,10],										//M1025A2 (M2)
 	["rhsusf_m1025_d_Mk19",25,50,10],									//M1025A2 (Mk19)
 	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",50,10,25],					//M1083 (HMG)
@@ -80,6 +80,7 @@ heavy_vehicles = [
 	["I_LT_01_scout_F",150,0,50],										//Nyx (scout)
 	["I_LT_01_cannon_F",150,200,50],									//Nyx (20mm)
 	["I_LT_01_AA_F",150,150,50],										//Nyx (AA)
+	["LOP_IA_T34",200,200,100],											//T-34
 	["RHS_M6",250,250,150],												//M6A2
 	["RHS_M2A2_BUSKI",250,200,150],										//M2A2ODS (Busk I)
 	["RHS_M2A3_BUSKIII",300,300,150],									//M2A3 (Busk III)
