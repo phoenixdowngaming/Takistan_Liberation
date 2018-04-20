@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=300;
+		nextID=308;
 	};
 	class Camera
 	{
-		pos[]={2983.9326,409.58221,222.11211};
-		dir[]={-0.7618292,-0.58487308,0.27860087};
-		up[]={-0.5493114,0.81110281,0.20088345};
-		aside[]={0.3434664,-8.9919195e-007,0.93920314};
+		pos[]={713.50031,615.42596,275.05685};
+		dir[]={-0.92239916,-0.38265049,-0.054709096};
+		up[]={-0.38204849,0.92383283,-0.022659045};
+		aside[]={-0.059217878,-9.1279799e-007,0.99835008};
 	};
 };
 binarizationWanted=0;
@@ -27873,7 +27873,7 @@ class Mission
 			};
 			id=961;
 			type="rhsusf_M1220_M2_usarmy_d";
-			atlOffset=0.43838501;
+			atlOffset=0.43823242;
 			class CustomAttributes
 			{
 				class Attribute0
