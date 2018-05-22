@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=995;
+		nextID=1740;
 	};
 	class LayerIndexProvider
 	{
-		nextID=300;
+		nextID=408;
 	};
 	class Camera
 	{
-		pos[]={2983.9326,409.58221,222.11211};
-		dir[]={-0.7618292,-0.58487308,0.27860087};
-		up[]={-0.5493114,0.81110281,0.20088345};
-		aside[]={0.3434664,-8.9919195e-007,0.93920314};
+		pos[]={2910.3374,405.93375,225.38469};
+		dir[]={-0.41387838,-0.32813141,0.84919876};
+		up[]={-0.14377624,0.94461054,0.29500195};
+		aside[]={0.89896482,5.3574331e-007,0.43813241};
 	};
 };
 binarizationWanted=0;
@@ -75,13 +75,15 @@ addons[]=
 	"A3_Structures_F_System",
 	"rhsusf_c_Caiman",
 	"rhsusf_vehicles",
-	"A3_Modules_F_Multiplayer"
+	"A3_Modules_F_Multiplayer",
+	"A3_Structures_F_Civ_InfoBoards",
+	"CUP_CAMisc"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -279,6 +281,11 @@ class AddonsMetaData
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
+		};
+		class Item30
+		{
+			className="CUP_CAMisc";
+			name="CUP_CAMisc";
 		};
 	};
 };
@@ -12555,7 +12562,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=364;
+		items=382;
 		class Item0
 		{
 			dataType="Marker";
@@ -15706,7 +15713,6 @@ class Mission
 						init="removeallWeapons this; removebackpack this; this setVariable ['ace_medical_medicClass', 1]; this setVariable ['ACE_isEngineer', 1];";
 						name="commandant";
 						description="Platoon Leader (Commander)";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=432;
@@ -27694,7 +27700,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2894.0811,361.59924,231.259};
+				position[]={2892.9551,361.54544,231.8996};
 				angles[]={0,6.2589927,0};
 			};
 			side="Empty";
@@ -27704,7 +27710,7 @@ class Mission
 			};
 			id=877;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.91741943;
+			atlOffset=0.91744995;
 		};
 		class Item356
 		{
@@ -27873,7 +27879,7 @@ class Mission
 			};
 			id=961;
 			type="rhsusf_M1220_M2_usarmy_d";
-			atlOffset=0.43838501;
+			atlOffset=0.43823242;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28180,6 +28186,346 @@ class Mission
 				};
 				nAttributes=10;
 			};
+		};
+		class Item364
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8160.937,296.04001,1998.8915};
+				angles[]={0,2.699367,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="repairPad_1";
+			};
+			id=1000;
+			type="Land_HelipadCircle_F";
+		};
+		class Item365
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8123.2349,296.04001,2085.7932};
+			};
+			id=1001;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item366
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2898.5171,361.84479,250.729};
+				angles[]={0,6.2738299,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="billboard_1";
+			};
+			id=1002;
+			type="Land_Billboard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="images\pdg_logo_CO.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item367
+		{
+			dataType="Trigger";
+			position[]={2898.864,360.27075,248.034};
+			angle=1.5845139;
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{0=[]execVM ""intro_logo.sqf"";}";
+				onDeactivation="call{billboard setObjectTexture [0,""images\pdg_logo_CO.paa""];}";
+				sizeA=3;
+				sizeB=5;
+				sizeC=3;
+				repeatable=1;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=1004;
+			type="EmptyDetector";
+		};
+		class Item368
+		{
+			dataType="Layer";
+			name="Heavy Factory";
+			id=1054;
+			atlOffset=-610.15997;
+		};
+		class Item369
+		{
+			dataType="Layer";
+			name="Container Yard";
+			id=1177;
+			atlOffset=-610.15997;
+		};
+		class Item370
+		{
+			dataType="Layer";
+			name="Sugar Cane Plant";
+			id=1269;
+			atlOffset=-610.15997;
+		};
+		class Item371
+		{
+			dataType="Layer";
+			name="Sugar Cane Refinery";
+			id=1385;
+			atlOffset=-610.15997;
+		};
+		class Item372
+		{
+			dataType="Layer";
+			name="BIS Small Jungle Camp (APEX)";
+			id=1397;
+			atlOffset=-610.15997;
+		};
+		class Item373
+		{
+			dataType="Layer";
+			name="Headquarters";
+			id=1470;
+			atlOffset=-610.15997;
+		};
+		class Item374
+		{
+			dataType="Layer";
+			name="Bunker System";
+			id=1558;
+			atlOffset=-610.15997;
+		};
+		class Item375
+		{
+			dataType="Layer";
+			name="Circular Bunkers";
+			id=1594;
+			atlOffset=-610.15997;
+		};
+		class Item376
+		{
+			dataType="Layer";
+			name="Vehicle Cargo Post";
+			id=1626;
+			atlOffset=-610.15997;
+		};
+		class Item377
+		{
+			dataType="Layer";
+			name="Vehicle Watchtower";
+			id=1655;
+			atlOffset=-610.15997;
+		};
+		class Item378
+		{
+			dataType="Layer";
+			name="Vehicle Bunker (Large)";
+			id=1680;
+			atlOffset=-610.15997;
+		};
+		class Item379
+		{
+			dataType="Layer";
+			name="Depot [OPF]";
+			id=1736;
+			atlOffset=-610.15997;
+		};
+		class Item380
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2895.239,360.44803,239.49612};
+						angles[]={0,0.36122975,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{this allowdamage false;}";
+						isPlayer=1;
+					};
+					id=1738;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1737;
+		};
+		class Item381
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2898.4451,362.13992,250.37601};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="billboard_Voice";
+			};
+			id=1739;
+			type="HeliHEmpty";
+			atlOffset=2.0239868;
 		};
 	};
 	class Connections

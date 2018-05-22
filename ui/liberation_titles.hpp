@@ -7,6 +7,31 @@ class CfgSounds
 		sound[] = {"res\c130.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	//Xian JetService
+	class air_wrench
+	{
+		name = "air_wrench";
+		sound[] = {"\sounds\air_wrench.ogg",db+40, 1};
+		titles[] = {1, ""};
+	};
+	class liquid
+	{
+		name = "liquid";
+		sound[] = {"\sounds\liquid.ogg",db+40, 1};
+		titles[] = {1, ""};
+	};
+	class mech_clamp
+	{
+		name = "mech_clamp";
+		sound[] = {"\sounds\mech_clamp.ogg",db+40, 1};
+		titles[] = {1, ""};
+	};
+	class PDG_Logo
+	{
+		name = "PDG_Logo";
+		sound[] = {"\sounds\PDG_Logo.ogg",db+10, 1};
+		titles[] = {1, "PDG Logo Sound Effect"};
+	};
 };
 
 class RscTitles

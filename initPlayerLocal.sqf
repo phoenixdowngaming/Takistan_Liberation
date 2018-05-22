@@ -9,3 +9,6 @@ player addEventHandler ["Respawn", {player enablestamina false}];
 
 player enablefatigue false;
 player addEventHandler ["Respawn", {player enablefatigue false}];
+//Xian's JetService
+player addEventhandler ["GetInMan",{call fnc_xian_vehicleCheck}];
+player addMPEventHandler ["MPRespawn",{call fnc_xian_respawnEH}];

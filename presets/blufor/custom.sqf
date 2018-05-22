@@ -65,38 +65,46 @@ infantry_units = [
 
 light_vehicles = [
 	["rhsusf_m1025_d",25,0,10],											//M1025A2 (Unarmed)
-	["rhsusf_m998_d_2dr_halftop",25,0,10],								//M998 2 Door HalfTop
-	["rhsusf_mrzr4_d",15,0,5],											//MRZR4 SOF Buggy (Unarmed)
-	["rhsusf_m1025_d_m2",50,10,50],										//M1025A2 (M2)
-	["rhsusf_m1025_d_Mk19",50,50,50],									//M1025A2 (Mk19)
-	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",75,10,50],					//M1083 (HMG)
-	["rhsusf_M977A4_BKIT_M2_usarmy_d",100,10,50]						//M977A4 BKIT (HMG)
+	["rhsusf_mrzr4_d",20,0,10],											//MRZR4 SOF Buggy (Unarmed)
+	["LOP_IA_Offroad_m2",20,10,10],										//Technical (M2)
+	["rhsusf_m1025_d_m2",25,10,10],										//M1025A2 (M2)
+	["rhsusf_m1025_d_Mk19",25,50,10],									//M1025A2 (Mk19)
+	["rhsusf_m1083a1p2_b_m2_d_fmtv_usarmy",50,10,25],					//M1083 (HMG)
+	["rhsusf_M977A4_BKIT_M2_usarmy_d",50,10,25]							//M977A4 BKIT (HMG)
 ];
 
 heavy_vehicles = [
-	["rhsusf_m113d_usarmy",75,10,75],									//M113A3 (M2)
-	["rhsusf_m113d_usarmy_MK19",75,50,75],								//M113A3 (Mk19)
-	["rhsusf_M1117_D",150,100,100],										//M1117 ASV
-	["RHS_M6",300,250,175],												//M6A2
-	["RHS_M2A2_BUSKI",200,200,150],										//M2A2ODS (Busk I)
-	["RHS_M2A3_BUSKIII",200,250,175],									//M2A3 (Busk III)
-	["rhsusf_m1a1aim_tuski_d",400,350,300],								//M1A1SA (Tusk I)
-	["rhsusf_m1a2sep1tuskiid_usarmy",500,400,300]						//M1A2SEPv1 (Tusk II)
+	["rhsusf_m113d_usarmy",50,10,25],									//M113A3 (M2)
+	["rhsusf_m113d_usarmy_MK19",50,50,25],								//M113A3 (Mk19)
+	["rhsusf_M1117_D",150,100,50],										//M1117 ASV
+	["I_LT_01_scout_F",150,0,50],										//Nyx (scout)
+	["I_LT_01_cannon_F",150,200,50],									//Nyx (20mm)
+	["I_LT_01_AA_F",150,150,50],										//Nyx (AA)
+	["LOP_IA_T34",200,200,100],											//T-34
+	["RHS_M6",250,250,150],												//M6A2
+	["RHS_M2A2_BUSKI",250,200,150],										//M2A2ODS (Busk I)
+	["RHS_M2A3_BUSKIII",300,300,150],									//M2A3 (Busk III)
+	["B_AFV_Wheeled_01_cannon_F",300,400,250],							//Stryker
+	["rhsusf_m1a1aim_tuski_d",400,400,400],								//M1A1SA (Tusk I)
+	["rhsusf_m1a2sep1tuskiid_usarmy",500,450,400],						//M1A2SEPv1 (Tusk II)
+	["O_MBT_04_command_F",500,800,400]									//T-14
 ];
 
 air_vehicles = [
-	["RHS_MELB_MH6M",150,0,100],										//MH-6 RHS MELB
-	["RHS_MELB_AH6M",200,250,150],										//MELB
-	["RHS_UH60M_ESSS2_d",250,300,150],									//UH-60M
-	["RHS_UH60M_ESSS_d",300,500,150],									//UH-60M ESSS
-	["RHS_UH1Y_d_GS",200,200,125],										//UH-1Y (Ground Suppression)
-	["RHS_CH_47F_10",275,75,150],										//CH-47 Chinook (Armed)
-	["rhsusf_CH53E_USMC_D",300,300,300],								//CH-53E Super Stallion
-	["RHS_AH1Z",500,500,200],											//AH-1Z (Multi-Role)
-	["RHS_AH64D",750,750,250],											//AH-64D (Multi-Role)
-	["B_Plane_CAS_01_dynamicLoadout_F",2500,2500,2500],					//A-10A (CAS)
-	["rhsusf_f22",2500,2500,2500],										//f22
-	["RHS_C130J",1000,0,1000]											//C130
+	["RHS_MELB_MH6M",50,0,150],											//MH-6 RHS MELB
+	["RHS_MELB_AH6M",50,250,150],										//MELB
+	["RHS_UH60M_ESSS2_d",100,300,250],									//UH-60M
+	["RHS_UH60M_ESSS_d",100,500,250],									//UH-60M ESSS
+	["RHS_UH1Y_d_GS",100,200,200],										//UH-1Y (Ground Suppression)
+	["RHS_CH_47F_10",150,10,300],										//CH-47 Chinook (Armed)
+	["rhsusf_CH53E_USMC_D",200,100,500],								//CH-53E Super Stallion
+	["RHS_AH1Z",300,750,400],											//AH-1Z (Multi-Role)
+	["RHS_AH64D",500,1000,500],											//AH-64D (Multi-Role)
+	["I_Plane_Fighter_03_dynamicLoadout_F",750,750,1500],				//ALCA
+	["B_Plane_CAS_01_dynamicLoadout_F",1000,2500,1500],					//A-10A (CAS)
+	["I_Plane_Fighter_04_F",1000,1500,2000],							//Gripen (Light multirole)
+	["rhsusf_f22",1000,1000,2500],										//f22   (CAP)
+	["RHS_C130J",2000,0,2000]											//C130
 ];
 
 static_vehicles = [
@@ -106,7 +114,10 @@ static_vehicles = [
 	["RHS_TOW_TriPod_D",5,50,0],										//TOW (AT)
 	["RHS_Stinger_AA_pod_D",5,50,0],									//Stinger (AA)
 	["RHS_M252_D",80,150,0],											//Mk6 Mortar
-	["RHS_M119_D",100,200,0]											//M119A2
+	["RHS_M119_D",100,200,0],											//M119A2
+	["B_AAA_System_01_F",100,100,0],									//CIWS
+	["B_SAM_System_01_F",125,200,0],									//SAM
+	["B_SAM_System_02_F",200,300,0]										//heavy SAM
 ];
 
 buildings = [
@@ -304,11 +315,15 @@ blufor_squad_para = [
 
 // Elite vehicles that should be unlocked through military base capture.
 elite_vehicles = [
-	"rhsusf_m1a1aim_tuski_d",											//M1A1SA (Tusk I)
+	"B_AFV_Wheeled_01_cannon_F",										//Stryker
+	"I_LT_01_cannon_F",													//nyx (20mm)
+	"I_LT_01_AA_F",														//nyx (AA)
+	"O_MBT_04_command_F",												//T-14
+	"RHS_AH1Z",															//AH-1Z
 	"RHS_M2A3_BUSKIII",													//M2A3 (Busk III)
 	"rhsusf_m1a2sep1tuskiid_usarmy",									//M1A2SEPv1 (Tusk II)
 	"RHS_AH64D",														//AH-64D (Multi-Role)
+	"I_Plane_Fighter_04_F",												//Gripen (multirole)
 	"B_Plane_CAS_01_dynamicLoadout_F",									//A-10A (CAS)
-	"rhsusf_f22"														//F-22
+	"rhsusf_f22"														//F-22 (CAP)
 ];
-
