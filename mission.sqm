@@ -12,16 +12,6 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< HEAD
-		nextID=408;
-	};
-	class Camera
-	{
-		pos[]={2910.3374,405.93375,225.38469};
-		dir[]={-0.41387838,-0.32813141,0.84919876};
-		up[]={-0.14377624,0.94461054,0.29500195};
-		aside[]={0.89896482,5.3574331e-007,0.43813241};
-=======
 		nextID=392;
 	};
 	class Camera
@@ -30,7 +20,6 @@ class EditorData
 		dir[]={0.87934119,-0.38916227,0.27461752};
 		up[]={0.37150404,0.92114693,0.11602001};
 		aside[]={0.29811385,6.161863e-007,-0.9545815};
->>>>>>> 8f595d28b820111195663bfb1efce16ed227ad9d
 	};
 };
 binarizationWanted=0;
@@ -94,11 +83,7 @@ class AddonsMetaData
 {
 	class List
 	{
-<<<<<<< HEAD
-		items=31;
-=======
 		items=32;
->>>>>>> 8f595d28b820111195663bfb1efce16ed227ad9d
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -303,11 +288,7 @@ class AddonsMetaData
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-<<<<<<< HEAD
-		class Item30
-=======
 		class Item31
->>>>>>> 8f595d28b820111195663bfb1efce16ed227ad9d
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
