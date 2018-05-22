@@ -8,6 +8,7 @@ if (isDedicated) then {debug_source = "Server";} else {debug_source = name playe
 [] call compileFinal preprocessFileLineNumbers "kp_liberation_config.sqf";
 [] call compileFinal preprocessFileLineNumbers "presets\init_presets.sqf";
 
+[] execVM "Vcom\VcomInit.sqf";//VCOM 3.0 AI
 
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
 //[] execVM "scripts\init_droneWork.sqf";
@@ -29,7 +30,6 @@ if (!isDedicated && hasInterface) then {
 } else {
 	setViewDistance 1600;
 };
-[] execVM "VCOMAI\init.sqf";
 [] execVM "scripts\lessExplosions.sqf";
 enableSentences false;
 showSubtitles false;

@@ -18,7 +18,14 @@ joinUnassigned = 0;
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
 
+class CfgFunctions 
+{
+	#include "vcom\cfgFunctions.hpp"
+};
 
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
 
 class CfgDebriefing
 {
